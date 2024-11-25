@@ -41,15 +41,26 @@
 - REST API (사전 구현된 API 호출)
 
 ## 프로젝트 구조
-src
-├── components        # 재사용 가능한 컴포넌트
-├── pages             # 각 페이지별 컴포넌트
-│   ├── Auth          # 인증 관련 페이지 (로그인, 회원가입)
-│   └── Boards        # 게시판 관련 페이지 (목록, 상세, 작성, 수정)
-├── services          # API 호출 함수
-├── stores            # MobX 스토어 (AuthStore, BoardStore)
-├── styles            # 전역 및 페이지별 스타일(SCSS)
-├── App.js            # 주요 라우팅 정의
-└── index.js          # React 애플리케이션 진입점
+![image](https://github.com/user-attachments/assets/cf78a33c-e35e-4732-b1dd-6d6626134333)
 
+
+## 설치 및 실행방법
+1. 프로젝트 클론
+
+   git clone https://github.com/username/project-name.git
+   cd project-name
+
+2. 필요한 패키지 설치
+
+   npm install
+
+3. 환경 변수 설정
+
+   REACT_APP_API_BASE_URL=https://front-mission.bigs.or.kr
+
+4. 프로젝트 실행
+
+   npm start
+
+- 브라우저에서 ``http://localhost:3000`` 으로 접속할 수 있습니다.
 
