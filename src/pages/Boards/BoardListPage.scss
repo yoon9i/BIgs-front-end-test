@@ -1,0 +1,176 @@
+.board-list-page {
+    max-width: 1200px; // 페이지 최대 너비
+    margin: 0 auto; // 페이지를 수평 중앙에 배치
+    padding: 20px; // 페이지 내부 여백
+    font-family: Arial, sans-serif; // 기본 글꼴
+}
+
+.board-header {
+    display: flex; // 플렉스 레이아웃
+    justify-content: space-between; // 양쪽 끝에 요소 배치
+    align-items: center; // 세로 방향으로 중앙 정렬
+    margin-bottom: 30px; // 하단 여백
+    padding: 10px 20px; // 내부 여백
+    background-color: #007bff; // 배경색 (파란색)
+    border-radius: 8px; // 모서리를 둥글게
+    color: #fff; // 텍스트 색상 (흰색)
+}
+
+.board-header h1 {
+    font-size: 2rem; // 제목 크기
+    margin: 0; // 마진 제거
+}
+
+.user-controls {
+    display: flex; // 플렉스 레이아웃
+    flex-direction: column; // 세로 방향 정렬
+    align-items: flex-end; // 오른쪽 정렬
+}
+
+.user-controls p {
+    margin: 0; // 기본 마진 제거
+    font-size: 1rem; // 텍스트 크기
+}
+
+.logout-button {
+    margin-top: 5px; // 상단 여백
+    padding: 8px 12px; // 버튼 내부 여백
+    font-size: 14px; // 텍스트 크기
+    color: #007bff; // 텍스트 색상
+    background-color: #fff; // 배경색 (흰색)
+    border: none; // 테두리 제거
+    border-radius: 5px; // 모서리를 둥글게
+    cursor: pointer; // 마우스 포인터 변경
+    transition: background-color 0.3s, color 0.3s; // 색상 변화 애니메이션
+}
+
+.logout-button:hover {
+    background-color: #ddd; // 버튼 호버 시 배경색 변경
+}
+
+.create-post-button {
+    display: block; // 블록 요소로 설정
+    margin: 20px auto; // 버튼을 수평 중앙에 배치
+    padding: 10px 20px; // 내부 여백
+    font-size: 16px; // 텍스트 크기
+    color: #fff; // 텍스트 색상
+    background-color: #007bff; // 배경색 (파란색)
+    border: none; // 테두리 제거
+    border-radius: 5px; // 모서리를 둥글게
+    cursor: pointer; // 마우스 포인터 변경
+    transition: background-color 0.3s; // 배경색 변화 애니메이션
+}
+
+.create-post-button:hover {
+    background-color: #0056b3; // 버튼 호버 시 배경색 변경
+}
+
+.post-list {
+    display: grid; // 그리드 레이아웃 사용
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); // 반응형 컬럼 설정
+    gap: 20px; // 그리드 아이템 간 간격
+}
+
+.post-card {
+    background-color: #f9f9f9; // 배경색 (밝은 회색)
+    padding: 20px; // 내부 여백
+    border-radius: 10px; // 모서리를 둥글게
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // 그림자 효과
+    display: flex; // 플렉스 레이아웃
+    flex-direction: column; // 세로 방향 정렬
+    justify-content: space-between; // 위아래로 요소 정렬
+    transition: transform 0.2s, box-shadow 0.2s; // 애니메이션 효과
+}
+
+.post-card:hover {
+    transform: translateY(-5px); // 호버 시 카드가 위로 올라감
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); // 호버 시 그림자 강조
+}
+
+.post-card h2 {
+    font-size: 1.5rem; // 제목 크기
+    margin: 0 0 10px; // 하단 여백
+    color: #333; // 텍스트 색상
+    overflow: hidden; // 텍스트 넘칠 시 숨김
+    text-overflow: ellipsis; // 텍스트 넘칠 시 말줄임 표시
+    white-space: nowrap; // 텍스트를 한 줄로 제한
+}
+
+.post-card p {
+    font-size: 1rem; // 텍스트 크기
+    color: #555; // 텍스트 색상
+    margin: 0 0 15px; // 하단 여백
+    overflow: hidden; // 넘치는 텍스트 숨김
+    text-overflow: ellipsis; // 말줄임 표시
+    display: -webkit-box;
+    display: box; // 표준 속성 (미래 지원 대비)
+    -webkit-line-clamp: 2; // 2줄로 제한 (웹킷 브라우저용)
+    line-clamp: 2; // 표준 속성 (미래 지원 대비)
+    -webkit-box-orient: vertical; // 세로 방향 제한
+    box-orient: vertical; // 표준 속성 (미래 지원 대비)
+}
+
+
+.actions {
+    display: flex; // 플렉스 레이아웃
+    gap: 10px; // 버튼 간 간격
+}
+
+.view-button {
+    padding: 10px 15px; // 내부 여백
+    font-size: 14px; // 텍스트 크기
+    color: #fff; // 텍스트 색상
+    background-color: #007bff; // 배경색
+    border: none; // 테두리 제거
+    border-radius: 5px; // 모서리를 둥글게
+    cursor: pointer; // 마우스 포인터 변경
+    transition: background-color 0.3s; // 배경색 변화 애니메이션
+}
+
+.view-button:hover {
+    background-color: #0056b3; // 호버 시 배경색 변경
+}
+
+.delete-button {
+    padding: 10px 15px; // 내부 여백
+    font-size: 14px; // 텍스트 크기
+    color: #fff; // 텍스트 색상
+    background-color: #ff4d4d; // 배경색 (빨간색)
+    border: none; // 테두리 제거
+    border-radius: 5px; // 모서리를 둥글게
+    cursor: pointer; // 마우스 포인터 변경
+    transition: background-color 0.3s; // 배경색 변화 애니메이션
+}
+
+.delete-button:hover {
+    background-color: #d43c3c; // 호버 시 배경색 변경
+}
+
+.pagination {
+    display: flex; // 플렉스 레이아웃
+    justify-content: center; // 중앙 정렬
+    margin-top: 30px; // 상단 여백
+    gap: 10px; // 버튼 간 간격
+}
+
+.pagination button {
+    padding: 10px 15px; // 버튼 내부 여백
+    font-size: 14px; // 텍스트 크기
+    color: #333; // 텍스트 색상
+    background-color: #f1f1f1; // 배경색
+    border: 1px solid #ddd; // 테두리 색상
+    border-radius: 5px; // 모서리를 둥글게
+    cursor: pointer; // 마우스 포인터 변경
+    transition: background-color 0.3s, color 0.3s; // 색상 변화 애니메이션
+}
+
+.pagination button:hover {
+    background-color: #007bff; // 호버 시 배경색 변경
+    color: #fff; // 텍스트 색상 변경
+}
+
+.pagination button:disabled {
+    background-color: #ddd; // 비활성화 시 배경색
+    color: #999; // 비활성화 시 텍스트 색상
+    cursor: not-allowed; // 비활성화 커서 스타일
+}
